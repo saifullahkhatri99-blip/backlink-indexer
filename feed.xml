@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>NexusIndex Live Backlink Matrix Feed</title>
+  <link>https://saifullahkhatri99-blip.github.io/backlink-indexer/</link>
+  <description>Automated search crawler indexing feed and resource updates.</description>
+  <atom:link href="https://saifullahkhatri99-blip.github.io/backlink-indexer/feed.xml" rel="self" type="application/rss+xml" />
+  <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
+  <lastBuildDate>Wed, 02 Sep 2026 12:00:00 GMT</lastBuildDate>
+  <item>
+    <title>NexusIndex Pro Matrix Online</title>
+    <link>https://saifullahkhatri99-blip.github.io/backlink-indexer/</link>
+    <description>NexusIndex autonomous crawler and index hub deployed on GitHub Pages.</description>
+    <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
+    <guid>https://saifullahkhatri99-blip.github.io/backlink-indexer/</guid>
+  </item>
+</channel>
+</rss>
