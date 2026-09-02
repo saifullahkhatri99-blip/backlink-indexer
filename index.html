@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusIndex | 100% Free Autonomous Backlink Indexer & Googlebot Bait Matrix</title>
+    <meta name="description" content="Next-Gen Free Autonomous Backlink Indexer powered by IndexNow Protocol, 50+ Global XML-RPC Ping Network, Google WebSub Hubs, and High-DA GitHub Pages Bot Baiting.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Outfit:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Ambient Glow Effects -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <div class="brand-icon">
+                    <span class="pulse-ring"></span>
+                    ⚡
+                </div>
+                <div class="brand-text">
+                    <h1>NEXUS<span>INDEX</span> <span class="badge-tag">PRO MATRIX</span></h1>
+                    <p class="subtitle">Autonomous Backlink Indexing & High-DA Googlebot Bait System</p>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <div class="status-indicator">
+                    <span class="status-dot live"></span>
+                    <span class="status-label">ENGINES: <strong>ONLINE</strong></span>
+                </div>
+                <a href="https://github.com/saifullahkhatri99-blip/backlink-indexer" target="_blank" class="github-btn" id="repoLink">
+                    <svg height="18" viewBox="0 0 16 16" width="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                    GitHub Repo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-content">
+        <!-- Top Stats Dashboard -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon cyan">🔗</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="statTotalLinks">0</span>
+                    <span class="stat-title">Backlinks Loaded</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">⚡</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="statProcessed">0</span>
+                    <span class="stat-title">Pings / Requests Dispatched</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon purple">🌐</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="statEnginesActive">5 / 5</span>
+                    <span class="stat-title">Active Index Protocols</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon yellow">🧲</div>
+                <div class="stat-info">
+                    <span class="stat-value">DA 95+</span>
+                    <span class="stat-title">GitHub Bait Authority</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Workspace (Grid 2 Columns) -->
+        <div class="workspace-grid">
+            
+            <!-- Left Column: URL Input & Engine Settings -->
+            <div class="card panel-input">
+                <div class="panel-header">
+                    <h2><span>01</span> Backlink Matrix Input</h2>
+                    <div class="input-tools">
+                        <button class="tool-btn" id="btnSampleLinks" title="Load sample test links">Load Samples</button>
+                        <button class="tool-btn" id="btnCleanLinks" title="Sanitize & clean duplicates">Clean & Dedupe</button>
+                        <button class="tool-btn danger" id="btnClearLinks" title="Clear all text">Clear</button>
+                    </div>
+                </div>
+
+                <div class="textarea-container">
+                    <textarea id="urlInput" placeholder="Paste your URLs here (one per line, raw text, markdown [title](url), or HTML <a> tags)...
+https://example.com/my-tier1-backlink
+https://mysite.org/guest-post-review
+https://forum.domain.net/threads/seo-test.102/"></textarea>
+                    <div class="textarea-footer">
+                        <span id="urlCountBadge">0 Valid URLs Detected</span>
+                        <span class="hint">Auto-detects URLs from raw text, HTML, & markdown</span>
+                    </div>
+                </div>
+
+                <!-- Engine Selection Switches -->
+                <div class="engine-selector">
+                    <h3><span>02</span> Active Indexing Engines (100% Free)</h3>
+                    <div class="toggles-grid">
+                        
+                        <label class="switch-card" for="toggleIndexNow">
+                            <input type="checkbox" id="toggleIndexNow" checked>
+                            <div class="switch-ui"></div>
+                            <div class="switch-content">
+                                <strong>🚀 IndexNow Instant Push</strong>
+                                <small>Direct push to Bing, Yandex, Seznam & Naver in real-time</small>
+                            </div>
+                        </label>
+
+                        <label class="switch-card" for="toggleBaitEngine">
+                            <input type="checkbox" id="toggleBaitEngine" checked>
+                            <div class="switch-ui"></div>
+                            <div class="switch-content">
+                                <strong>🧲 High-DA Googlebot Bait Engine</strong>
+                                <small>Generates Schema.org HTML feed on GitHub Pages (DA 95+)</small>
+                            </div>
+                        </label>
+
+                        <label class="switch-card" for="toggleXmlRpc">
+                            <input type="checkbox" id="toggleXmlRpc" checked>
+                            <div class="switch-ui"></div>
+                            <div class="switch-content">
+                                <strong>⚡ 50+ Global XML-RPC Ping Network</strong>
+                                <small>Ping-O-Matic, Google FeedBurner, Twingly & Blo.gs</small>
+                            </div>
+                        </label>
+
+                        <label class="switch-card" for="toggleWebSub">
+                            <input type="checkbox" id="toggleWebSub" checked>
+                            <div class="switch-ui"></div>
+                            <div class="switch-content">
+                                <strong>📡 Google WebSub / PubSubHubbub Hubs</strong>
+                                <small>Pushes live RSS/Atom updates to Google's official hub</small>
+                            </div>
+                        </label>
+
+                        <label class="switch-card" for="toggleArchive">
+                            <input type="checkbox" id="toggleArchive" checked>
+                            <div class="switch-ui"></div>
+                            <div class="switch-content">
+                                <strong>🏛️ Wayback & Archive Crawler Triggers</strong>
+                                <small>Forces archive crawler visits to signal fresh content</small>
+                            </div>
+                        </label>
+
+                    </div>
+                </div>
+
+                <!-- Advanced Configuration Collapsible -->
+                <details class="advanced-settings">
+                    <summary>⚙️ Advanced Protocol Config & Custom Key</summary>
+                    <div class="settings-body">
+                        <div class="form-group">
+                            <label for="indexNowKey">Custom IndexNow Key (Auto-Generated):</label>
+                            <div class="key-input-row">
+                                <input type="text" id="indexNowKey" readonly>
+                                <button class="tool-btn" id="btnGenKey">Regenerate</button>
+                                <button class="tool-btn" id="btnDownloadKey">Download .txt</button>
+                            </div>
+                            <small>Place this key file in your root domain if self-verifying, or let NexusIndex proxy it.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="requestDelay">Throttle Delay per Batch (ms):</label>
+                            <input type="number" id="requestDelay" value="150" min="50" max="3000">
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Big Action Buttons -->
+                <div class="action-buttons-row">
+                    <button class="btn btn-primary" id="btnLaunch">
+                        <span class="btn-glow"></span>
+                        <span class="btn-icon">🚀</span>
+                        LAUNCH HYPER-INDEXING MATRIX
+                    </button>
+                    <button class="btn btn-secondary" id="btnGenerateBait">
+                        <span class="btn-icon">🧲</span>
+                        Generate Bait Page
+                    </button>
+                    <button class="btn btn-outline" id="btnExportReport" disabled>
+                        <span class="btn-icon">📥</span>
+                        Export Report
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column: Live Terminal & Protocol Monitor -->
+            <div class="card panel-terminal">
+                <div class="panel-header">
+                    <div class="terminal-title">
+                        <span class="term-dot red"></span>
+                        <span class="term-dot yellow"></span>
+                        <span class="term-dot green"></span>
+                        <h2>Live Execution Matrix Console</h2>
+                    </div>
+                    <div class="terminal-actions">
+                        <button class="tool-btn" id="btnClearLogs">Clear Log</button>
+                    </div>
+                </div>
+
+                <!-- Live Progress Bar -->
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span id="progressStatusText">Ready for mission launch</span>
+                        <span id="progressPercentage">0%</span>
+                    </div>
+                    <div class="progress-bar-track">
+                        <div class="progress-bar-fill" id="progressBarFill" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <!-- Engine Pulse Status Row -->
+                <div class="engine-pills-row">
+                    <div class="engine-pill" id="pillIndexNow">
+                        <span class="pill-dot"></span>
+                        IndexNow: <strong class="val">Idle</strong>
+                    </div>
+                    <div class="engine-pill" id="pillBait">
+                        <span class="pill-dot"></span>
+                        Bot Bait: <strong class="val">Idle</strong>
+                    </div>
+                    <div class="engine-pill" id="pillXmlRpc">
+                        <span class="pill-dot"></span>
+                        XML-RPC: <strong class="val">Idle</strong>
+                    </div>
+                    <div class="engine-pill" id="pillWebSub">
+                        <span class="pill-dot"></span>
+                        WebSub: <strong class="val">Idle</strong>
+                    </div>
+                    <div class="engine-pill" id="pillArchive">
+                        <span class="pill-dot"></span>
+                        Archive: <strong class="val">Idle</strong>
+                    </div>
+                </div>
+
+                <!-- Terminal Output Window -->
+                <div class="terminal-body" id="terminalOutput">
+                    <div class="terminal-line system">
+                        <span class="timestamp">[00:00:00]</span>
+                        <span class="tag system">[SYSTEM]</span>
+                        <span class="msg">NexusIndex Engine Initialized. Ready for backlinks submission.</span>
+                    </div>
+                    <div class="terminal-line info">
+                        <span class="timestamp">[00:00:00]</span>
+                        <span class="tag info">[INFO]</span>
+                        <span class="msg">100% Free Zero-Cost Protocol Matrix Armed. Connected to GitHub Pages & Actions.</span>
+                    </div>
+                </div>
+
+                <!-- Secondary Tabs (Bait Preview, IndexNow Key, GitHub Automation) -->
+                <div class="secondary-tabs">
+                    <div class="tab-nav">
+                        <button class="tab-btn active" data-tab="tabBait">🧲 Googlebot Bait Preview</button>
+                        <button class="tab-btn" data-tab="tabHistory">🕒 Indexing History</button>
+                        <button class="tab-btn" data-tab="tabDeploy">🚀 GitHub 1-Min Setup</button>
+                    </div>
+
+                    <!-- Tab 1: Bait Preview -->
+                    <div class="tab-pane active" id="tabBait">
+                        <div class="bait-preview-header">
+                            <span>High-DA Googlebot Bait Page (Schema.org WebPage)</span>
+                            <div class="bait-actions">
+                                <button class="tool-btn" id="btnCopyBait">Copy HTML</button>
+                                <button class="tool-btn" id="btnDownloadBait">Download HTML</button>
+                            </div>
+                        </div>
+                        <pre class="code-preview" id="baitCodePreview"><code>&lt;!-- Submit backlinks above and click 'Generate Bait Page' to preview Schema.org Googlebot Magnet Code --&gt;</code></pre>
+                    </div>
+
+                    <!-- Tab 2: History -->
+                    <div class="tab-pane" id="tabHistory">
+                        <div class="history-container" id="historyList">
+                            <p class="empty-hint">No past indexing runs saved yet. Submit links to create history.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tab 3: GitHub Deploy -->
+                    <div class="tab-pane" id="tabDeploy">
+                        <div class="deploy-guide">
+                            <h4>⚡ 3-Step Free GitHub Pages Activation</h4>
+                            <ol>
+                                <li>Open your repo: <a href="https://github.com/saifullahkhatri99-blip/backlink-indexer" target="_blank"><strong>saifullahkhatri99-blip/backlink-indexer</strong></a></li>
+                                <li>Go to <strong>Settings</strong> &rarr; <strong>Pages</strong> (Left Sidebar).</li>
+                                <li>Under <em>Build and deployment</em>, set Source to <strong>Deploy from a branch</strong> &rarr; Branch <strong>main</strong> / root &rarr; Click <strong>Save</strong>!</li>
+                            </ol>
+                            <p class="success-note">Your tool will instantly be live worldwide with free SSL at <code>https://saifullahkhatri99-blip.github.io/backlink-indexer/</code> 🎉</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="ping-servers.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
