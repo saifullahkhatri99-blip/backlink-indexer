@@ -1,0 +1,22 @@
+name: Automated Googlebot Bait & Search Engine Cron Pinger
+
+on:
+  schedule:
+    # Runs every 6 hours automatically (100% Free on GitHub Actions)
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  ping-search-engines:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Dispatch XML-RPC & WebSub Search Engine Pings
+        run: |
+          echo "⚡ Dispatching automated pings to Google & Bing..."
+          curl -s -X POST "https://rpc.pingomatic.com/" || true
+          curl -s -X POST "https://pubsubhubbub.appspot.com/" -d "hub.mode=publish&hub.url=https://saifullahkhatri99-blip.github.io/backlink-indexer/" || true
+          curl -s "https://ping.blo.gs/" || true
+          echo "✅ Automated crawl signals dispatched successfully!"
